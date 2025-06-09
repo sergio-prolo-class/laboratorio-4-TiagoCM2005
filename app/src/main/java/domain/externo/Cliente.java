@@ -1,4 +1,5 @@
 package domain.externo;
+import domain.interno.Pessoa;
 import java.time.*;
 
 public class Cliente extends Pessoa{

@@ -1,11 +1,14 @@
-package domain;
-import java.time.*;
+package domain.externo;
+import java.time.LocalDate;
+
+import domain.interno.Senior;
 
 
 public class ClientePremium extends Cliente{
     
     private double pagamento_mensal;
     private LocalDate data_inicial;
+    private Senior representante;
     // Funcionario representante;
 
     public ClientePremium(String nome, String cpf, String sobrenome, String endereco, 
@@ -14,6 +17,5 @@ public class ClientePremium extends Cliente{
         this.data_inicial = LocalDate.now();
         this.pagamento_mensal = pagamento_mensal;
     }
-
 
 }
